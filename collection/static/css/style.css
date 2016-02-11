@@ -1,0 +1,12 @@
+body {
+	background-color: teal;
+	color: white;
+	opacity: .95;
+	font-family: Helvetica;
+}
+
+.bg-image {
+	background-image: url(../images/coffee_check.jpg);
+	height: 70vh;
+	min-width: 100vh;
+}
