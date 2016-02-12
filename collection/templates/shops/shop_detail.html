@@ -1,0 +1,8 @@
+{% extends 'layouts/base.html' %}
+{% load humanize %}
+{% block title %}{{ shop.name }} - {{ block.super }}{% endblock %} 
+
+{% block content %}
+	<h1>{{ shop.name }}</h1>
+	<p>{{ shop.description }}</p>
+{% endblock %}
