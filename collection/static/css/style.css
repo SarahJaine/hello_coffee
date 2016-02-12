@@ -1,12 +1,21 @@
 body {
-	background-color: teal;
-	color: white;
+	background-color: gray;
+	color: #2A2735;
 	opacity: .95;
 	font-family: Helvetica;
 }
 
 .bg-image {
 	background-image: url(../images/coffee_check.jpg);
-	height: 70vh;
-	min-width: 100vh;
+	height: 60vh;
+}
+
+nav {
+	background-color: #39A2AE;
+	text-align: center;
+	height: 5vh;
+}
+
+a:hover {
+	text-decoration: none;
 }
