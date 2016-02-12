@@ -1,21 +1,11 @@
-{% load staticfiles %}
-<!doctype html> 
-<html lang="en">
-<head>
-  	<meta charset="UTF-8">
- 	 <!-- lets IE know to render page "edge" ie with latest rendering engine -->
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-  	<!-- mobile browser understand site breakpoints for mobile, natural "device-width" scale, 100% -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="{% static 'css/style.css' %}" />
-	<title>My Hello Coffee Project</title>
-</head>
+{% extends 'layouts/base.html' %}
+{% block title %}Home - {{ block.super }}{% endblock %} 
 
-<body>
-	<div class="bg-image">
+{% block div %}<div class="bg-image"></div>{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<h1>Hello World!</h1>
+			<p>I am a basic website.</p>
 	</div>
-	<h1>Hello World!</h1>
-		<p>I am a basic website.</p>
-</body> 
-
-</html>
+{% endblock %}
