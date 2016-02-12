@@ -12,10 +12,13 @@
 			</p>
 		<h2>Shops</h2>
 			{% for shop in shops %} 
-			<h3>{{ shop.name }}</h3> 
-			<p>{{ shop.description }}</p> 
+			<h3>
+				<a href="{% url 'shop_detail' slug=shop.slug %}">
+					{{ shop.name }}
+				</a>
+			</h3> 
+				<p>{{ shop.description }}</p> 
 			{% endfor %}
 	</div>
-	
 {% endblock %}
 
