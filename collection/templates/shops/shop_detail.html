@@ -3,6 +3,10 @@
 {% block title %}{{ shop.name }} - {{ block.super }}{% endblock %} 
 
 {% block content %}
-	<h1>{{ shop.name }}</h1>
-	<p>{{ shop.description }}</p>
+	<div class="container">
+		<h1>{{ shop.name }}</h1>
+		<p>{{ shop.description }}</p>
+		</hr>
+		<a href="{% url 'edit_shop' slug=shop.slug %}">Edit store details.</a>
+	</div>
 {% endblock %}
