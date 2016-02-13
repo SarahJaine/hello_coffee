@@ -30,5 +30,6 @@ urlpatterns = [
         name='shop_detail'),
     url(r'^shops/(?P<slug>[-\w]+)/edit/$', views.edit_shop, 
         name='edit_shop'),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
