@@ -1,5 +1,5 @@
 db.sqlite3
-credentials.py3
+credentials.py
 venv
 *.pyc
 staticfiles
