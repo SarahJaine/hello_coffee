@@ -6,7 +6,7 @@
 
 {% block content %}
 	<div class="container">
-		<h1>Welcome {{user_name|title}}!</h1>
+		<h1>Welcome {{user|title}}!</h1>
 			<p> It's been {{ last_post|timeuntil:today }} since your last review.</p>
 			<p>You have reviewed {{ user_review_num|apnumber }} coffee shop{{ user_review_num|pluralize }}.	
 			</p>
